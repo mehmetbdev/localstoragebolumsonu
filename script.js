@@ -2,7 +2,7 @@ let elementName = document.querySelector(`#elementName`)
 let elementUserName = document.querySelector(`#elementUserName`)
 let btnSignIn = document.querySelector(`#btnSignIn`)
 
-let data = (localStorage.getItem(`accountData`)) ? JSON.parse(localStorage.getItem(`accountData`)) : []
+let data = (JSON.parse(localStorage.getItem(`accountData`))) ? JSON.parse(localStorage.getItem(`accountData`)) : []
 console.log(data)
 
 btnSignIn.addEventListener(`click`, check)
